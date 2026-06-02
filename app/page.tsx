@@ -14,10 +14,10 @@ export default async function Home() {
     <main className="min-h-screen overflow-hidden bg-[#09090b] text-white">
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_top_left,rgba(139,92,246,0.12),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.10),transparent_28%)]" />
 
-      <section className="relative mx-auto flex min-h-screen max-w-7xl gap-4 px-4 py-4 pb-24 md:pb-4">
+      <section className="relative mx-auto min-h-screen w-full max-w-7xl px-4 py-4 pb-24 xl:pb-4 xl:pl-28">
         <Sidebar />
 
-        <MotionShell className="grid flex-1 grid-cols-1 gap-4 md:grid-cols-4">
+        <MotionShell className="grid w-full min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <HeroTile />
           <StreakTile />
           <CourseGrid courses={courses} />
